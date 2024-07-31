@@ -58,7 +58,7 @@ async function run() {
 
     app.get("/api/user", async(req, res)=>{
       const userInfo = await user.find({}).toArray();
-      
+      res.json(userInfo);
     })
 
 
